@@ -1,13 +1,16 @@
 # Local/private config goes in the include
 [include]
         path = ~/.gitconfig.local
-[hub]
-        protocol = https
 [alias]
+        lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr, %cn)%Creset' --abbrev-commit --date=relative
+        hist = log --graph --pretty=format:'%h %ad | %s%d [%an]' --date=short
+        last = log -1 HEAD
+        unstage = reset HEAD --
+        amend = commit --amend -C HEAD
         co = checkout
-        promote = !$ZSH/bin/git-promote
-        wtf     = !$ZSH/bin/git-wtf
-        rank-contributors = !$ZSH/bin/git-rank-contributors
+        ci = commit
+        st = status
+        br = branch
         count   = !git shortlog -sn
 [color]
         diff = auto
@@ -23,11 +26,5 @@
         keepBackup = false
 [difftool]
         prompt = false
-[help]
-        autocorrect = 1
 [push]
-        # See `git help config` (search for push.default)
-        # for more information on different options of the below setting.
-        #
-        # Setting to git 2.0 default to suppress warning message
         default = simple

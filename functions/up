@@ -1,3 +1,8 @@
+#!/bin/sh
+# Move up X directories by executing "cd .." X times
+# Usage:
+# up [depth]
+
 up() {
     for i in `seq ${1:-1}`; do
       cd ..

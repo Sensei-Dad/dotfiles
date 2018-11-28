@@ -1,0 +1,13 @@
+alias l='clear && pwd;ls -pAl --color=auto'
+alias cd..='cd ..' # Oops!
+alias c='clear'
+alias cls='clear' # Because we recall MS-DOS, once in a while...
+
+alias mx='cmatrix -asb -u 2'
+
+alias joke='clear; /usr/games/fortune -o'
+
+# Ansible stuff
+alias apb='ansible-playbook --vault-password-file ~/.vault_pass'
+alias ave='ansible-vault edit --vault-password-file ~/.vault_pass'
+alias hgrep='history | grep'

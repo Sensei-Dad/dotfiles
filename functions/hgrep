@@ -1,0 +1,8 @@
+#!/bin/sh
+# Grep the history for something
+# Usage:
+# hgrep <string>
+
+hgrep() {
+	history | grep $1 | grep -v grep;
+}
