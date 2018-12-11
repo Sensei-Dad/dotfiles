@@ -193,7 +193,7 @@ extract () {
   fi
 }
 
-keychain slaurvick_db slaurvick devops-testing db-internal-testing
+keychain
 . ~/.keychain/`uname -n`-sh
 
 # for ansible
