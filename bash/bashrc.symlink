@@ -193,6 +193,13 @@ extract () {
   fi
 }
 
+# Move up X directories
+up() {
+    for i in `seq ${1:-1}`; do
+        cd ..
+    done
+}
+
 keychain
 . ~/.keychain/`uname -n`-sh
 

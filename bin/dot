@@ -38,7 +38,7 @@ while test $# -gt 0; do
 	shift
 done
 
-export ROOT=$HOME/ansible-devops/tmp/dotfiles
+export ROOT=$HOME/.dotfiles
 
 # Install software
 echo "› $ROOT/script/install"
