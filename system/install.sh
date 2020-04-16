@@ -1,2 +1,2 @@
 apt install -y vim sudo
-apt install -y cmatrix fortune-mod fortunes-off cowsay python3-pip tmux virtualenvwrapper keychain
+apt install -y cmatrix tree fortune-mod fortunes-off cowsay tmux virtualenvwrapper keychain

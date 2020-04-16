@@ -3,6 +3,9 @@ set -g prefix C-a
 bind-key C-a send-prefix
 set-option -g prefix2 C-b
 
+# use terminal colors
+set -g default-terminal "screen-256color"
+
 # reload ~/.tmux.conf
 bind r source-file ~/.tmux.conf
 

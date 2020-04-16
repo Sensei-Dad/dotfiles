@@ -1,5 +1,6 @@
 alias l='clear; ls -pAl --color=auto'
-alias d='clear; ls -Aldp .*/ */ --color=auto | sed "s/\/\//\//g"'
+alias d='clear; ls -Aldp */ --color=auto | sed "s/\/\//\//g"'
+alias dd='clear; ls -Aldp .*/ */ --color=auto | sed "s/\/\//\//g"'
 alias cd..='cd ..' # Oops!
 alias c='clear'
 alias cls='clear' # Because we recall MS-DOS, once in a while...
