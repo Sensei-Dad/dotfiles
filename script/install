@@ -4,8 +4,6 @@
 
 set -e
 
-sudo apt install -y ncal
-
 cd "$(dirname $0)"/..
 
 # find the installers and run them iteratively
