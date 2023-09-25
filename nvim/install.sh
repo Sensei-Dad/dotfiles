@@ -1,9 +1,12 @@
 #!/bin/bash
 
 # Install NeoVim and configs
-add-apt-repository ppa:neovim-ppa/unstable
+wget https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
 
-apt-get update
+tar -xzvf nvim-linux64.tar.gz
+mv nvim-linux64 /usr/local/
+rm -f nvim-linux64.tar.gz
 
-apt-get install -y neovim
+python -m pip uninstall neovim pynvim
+python -m pip install --user --upgrade pynvim
 

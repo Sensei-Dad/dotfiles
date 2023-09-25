@@ -3,7 +3,6 @@ alias d='clear; ls -Aldp */ --color=auto | sed "s/\/\//\//g"'
 alias dd='clear; ls -Aldp .*/ */ --color=auto | sed "s/\/\//\//g"'
 alias cd..='cd ..' # Oops!
 alias c='clear'
-alias cls='clear' # Because we recall MS-DOS, once in a while...
 alias t='clear;pwd;tree --filelimit=25'
 
 alias mx='cmatrix -asb -u 2'
@@ -17,3 +16,8 @@ alias hgrep='history | grep'
 
 # Terraform
 alias tf='terraform'
+
+# Save yourself from your own muscle memory
+alias vim='nvim'
+alias vi='nvim'
+alias cls='clear' # Because we recall MS-DOS, once in a while...

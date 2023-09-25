@@ -43,7 +43,7 @@ esac
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
-#force_color_prompt=yes
+force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -212,12 +212,8 @@ source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
 [[ $- != *i* ]] && return
 [[ -z "$TMUX" ]] && exec tmux
 
-# Tweaks for using Docker with WSL
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-export DOCKER_HOST=tcp://localhost:2375
-export DOCKER_HOST=tcp://localhost:2375
+# Add Python 3.11
+export PATH="$PATH:/usr/local/python3.11.5/bin:/home/sean/.local/bin"
 
-# Minikube on Windows
-export DOCKER_CERT_PATH=/mnt/c/Users/slaurvick/.minikube/certs
+# Add custom Neovim
+export PATH="$PATH:/usr/local/nvim-linux64/bin"
